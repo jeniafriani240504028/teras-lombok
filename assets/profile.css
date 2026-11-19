@@ -45,3 +45,18 @@ footer{background:var(--forest);color:white;padding:24px 0}
 @media(max-width:740px){.wrap{width:calc(100% - 36px)}.intro{gap:18px;padding:42px 0}.monogram{min-height:260px}.top{min-height:65px}nav{gap:12px}}
 @media(max-width:560px){.top{padding:12px 0;align-items:flex-start;flex-direction:column;gap:9px}nav{width:100%;flex-wrap:wrap}.intro,.about-details,.project{grid-template-columns:1fr}.intro{gap:27px}.monogram{min-height:190px}.project-photo{min-height:150px}.project-copy{padding:18px}.about,.projects{padding:34px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.profile-portrait {
+  display: block;
+  justify-self: center;
+  width: min(100%, 392px);
+  height: auto;
+  aspect-ratio: 4 / 5;
+  border-radius: 22px;
+  object-fit: cover;
+  object-position: 52% 34%;
+  background: var(--forest);
+}
+@media (max-width: 560px) {
+  .profile-portrait { width: min(100%, 320px); }
+}
